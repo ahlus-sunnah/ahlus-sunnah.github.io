@@ -2,16 +2,18 @@
 layout: default
 ---
 
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
 {% for post in paginator.posts %}
 <a href="{{ post.url }}">
 <div class="card card-border bg-base-100 w-96">
   <div class="card-body">
     <h2 class="card-title">{{ post.title }}</h2>
-    <p>{{ post.content }} {{ post.author }} {{ post.date }}</p>
+    <p>{{ post.content }} {{ post.author }}</p>
   </div>
 </div>
 </a>
 {% endfor %}
+</div>
 
 <div class="d-block mt-5 mb-5">
 <nav aria-label="Page navigation mt-3 mb-5">
