@@ -1,7 +1,7 @@
 title               : "Sunni Manhaj"
-description         : ""
+desc                : "Saying of Scholars"
 baseurl             : "/"
-keywords            : ""
+keywords            : "sect, shia, rafidah, sufi, sufism, khawarij, kharijites, islam, sunnah, salafi, salafism, sunni, ahlus-sunnah"
 url                 : "https://sunnimanhaj.github.io"
 github_username     : sunnimanhaj
 permalink           : pretty
