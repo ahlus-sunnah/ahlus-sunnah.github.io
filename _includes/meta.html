@@ -17,10 +17,28 @@
 {% elsif post.title %}
 <title>{{ post.title | escape }}</title>
 {% else %}
-<title>{{ site.title | escape | default: 'Dapoer Ela 85' }}</title>
+<title>{{ site.title | escape | default: 'Sunni Manhaj' }}</title>
 {% endif %}
-  <!-- TailwindCSS + daisyUI CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.css" rel="stylesheet" type="text/css" />
-  <!-- Font Awesome 6 (free icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.3/css/all.min.css">
+<meta name="directory" content="submission">
+<meta name="news_keywords" content="{{ site.keywords }}">
+<meta name="keywords" content="{{ site.keywords }}"/>
+<meta name="author" content="{{ site.author }}">
+<meta name="theme-color" content="Canvas">
+<meta name='coverage' content='Worldwide'>
+<meta name='distribution' content='Global'>
+<meta name='rating' content='General'>
+<meta name='revisit-after' content='3 days'>
+<meta name='subtitle' content='Ahlus-Sunnah Manhaj'>
+<meta name='target' content='all'>
+<meta name='identifier-URL' content='{{ site.url }}'>
+<meta name='directory' content='submission'>
+<meta itemprop='name' content='{{ site.title }}'>
+<meta name='url' content='{{ site.url }}'>
+<meta name='robots' content='index,follow'>
+<meta name="title" content="{% if page.title %}{{ page.title | escape }}{% elsif post.title %}{{ post.title | escape }}{% else %}{{ site.title | escape | default: 'Sunni Manhaj' }}{% endif %}">
+<meta name='abstract' content='{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}'>
+<!-- TailwindCSS + daisyUI CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.css" rel="stylesheet" type="text/css" />
+<!-- Font Awesome 6  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.3/css/all.min.css">
