@@ -4,7 +4,22 @@ layout: default
 {% if page.date %}
 <div class="bg-white py-10 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    {% if page.source %}
+     {{ page.author }} :
+    {% endif %}
     {{ page.content }}
   </div>
 </div>
+ {% if page.source %}
+  <li class="list-group-item bg-transparent">
+   Source : <b>{{ page.source }}</b>
+  </li>
+  {% else %}
+ {% endif %} 
+ {% if page.url %}
+  <li class="list-group-item bg-transparent">
+   <a href="{{ page.url }}" target="_blank" rel="nofollow"><b>Source</b></a>
+  </li>
+  {% else %}
+ {% endif %}
 {% endif %}
