@@ -3,6 +3,7 @@ layout: post
 date: "2024-09-26"
 title: "I Warn You Against The Shi'ah"
 author: "Imam ‘Amir ash-Sha’abi (d. 105 A.H.)"
+category: "shia"
 ---
 Imam ‘Amir ash-Sha’abi (d. 105 A.H.) said :
 
