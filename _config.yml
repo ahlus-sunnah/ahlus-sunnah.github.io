@@ -56,4 +56,12 @@ defaults:
       type: "pages"
     values:
       layout: page
-
+  - scope:
+      path: ""
+      type: "category"
+    values:
+      layout: category
+      
+collections:
+  category:
+    output: true
