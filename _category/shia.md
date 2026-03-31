@@ -1,5 +1,5 @@
 ---
 title: "Shi'a"
-tag: shia
+catefory: shia
 permalink: "/category/shia"
 ---
