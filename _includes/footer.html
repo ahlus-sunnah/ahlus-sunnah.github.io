@@ -1,0 +1,13 @@
+<footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+  <nav class="flex flex-wrap justify-center gap-4 mb-4">
+    {% for category in site.categories %}
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+      <a href="/categories/{{ category_name | slugify }}/" class="link link-hover capitalize">
+        {{ category_name }}
+      </a>
+    {% endfor %}
+  </nav>
+  <aside>
+    <p>Copyright © {{ "now" | date: "%Y" }} - All rights reserved by Your Site Name</p>
+  </aside>
+</footer>
