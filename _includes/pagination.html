@@ -16,8 +16,8 @@
     <span class="next ">Next</span>
   {% endif %}
 </div>
-<div class="join grid grid-cols-2">
-  {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="join-item btn btn-outline">Previous</a>{% else %}<button class="join-item btn btn-outline">Previous</button>{% endif %}
-  <button class="join-item btn btn-outline">Page: {{ paginator.page }} of {{ paginator.total_pages }}</button>
-  {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="join-item btn btn-outline">Next</a>{% else %}<button class="join-item btn btn-outline">Next</button>{% endif %}
+<div class="join">
+  {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="join-item btn btn-outline">Previous</a>{% else %}<button class="join-item btn btn-outline btn-disabled">Previous</button>{% endif %}
+  <button class="join-item btn btn-outline btn-disabled">Page: {{ paginator.page }} of {{ paginator.total_pages }}</button>
+  {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="join-item btn btn-outline">Next</a>{% else %}<button class="join-item btn btn-outline btn-disabled">Next</button>{% endif %}
 </div>
