@@ -2,12 +2,12 @@
   <nav class="flex flex-wrap justify-center gap-4 mb-4">
     {% for category in site.categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
-      <a href="/categories/{{ category_name | slugify }}/" class="link link-hover capitalize">
+      <a href="/categories/{{ category_name | slugify }}/" class="link link-hover capitalize badge badge-outline badge-accent">
         {{ category_name }}
       </a>
     {% endfor %}
   </nav>
   <aside>
-    <p>Copyright © {{ "now" | date: "%Y" }} - All rights reserved by Your Site Name</p>
+    <p>Copyright © {{ "now" | date: "%Y" }} - All rights reserved by {{ site.title }}</p>
   </aside>
 </footer>
