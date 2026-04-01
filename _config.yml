@@ -6,7 +6,7 @@ url                 : "https://sunnimanhaj.github.io"
 github_username     : sunnimanhaj
 permalink           : pretty
 markdown            : kramdown
-paginate            : 10
+paginate            : 6
 paginate_path       : "/:num/"
 
 include:
