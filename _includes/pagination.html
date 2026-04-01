@@ -1,5 +1,5 @@
 <!-- Pagination links -->
-<div class="pagination">
+<div class="pagination hidden">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
       Previous
@@ -15,4 +15,9 @@
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
+</div>
+<div class="join grid grid-cols-2">
+  {% if paginator.previous_page %}<button href="{{ paginator.previous_page_path }}" class="join-item btn btn-outline">Previous</button>{% else %}<button class="join-item btn btn-outline">Previous</button>{% endif %}
+  <button class="join-item btn btn-outline">Page: {{ paginator.page }} of {{ paginator.total_pages }}</button>
+  {% if paginator.next_page %}<button href="{{ paginator.next_page_path }}" class="join-item btn btn-outline">Next</button>{% else %}<button class="join-item btn btn-outline">Next</button>{% endif %}
 </div>
