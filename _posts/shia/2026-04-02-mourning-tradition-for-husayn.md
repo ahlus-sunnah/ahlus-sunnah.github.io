@@ -3,7 +3,7 @@ layout: post
 date: "2026-04-02"
 title: "Mourning Traditions for Al-Husayn"
 author: "Imam Muhammad Ibn Abdul-Wahhab Al-Hanbali"
-category: "shia"
+category: [shia, bidah]
 source: "Risalah fi Radd ala ar-Rafida p.46"
 link: "https://shamela.ws/book/11217/44#p1"
 ---
