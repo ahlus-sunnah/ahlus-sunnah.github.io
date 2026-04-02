@@ -21,11 +21,10 @@ layout: default
     Posts in <b>{{ page.title }}</b>
 </h3>
 {% for post in site.categories[page.category] %}
-        <section class="mb-24">
+        <section class="mb-3">
             <div class="space-y-6">
                 <div class="group flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8 py-2 border-b border-base-200/50 hover:border-primary/20 transition-all">
                     <time class="font-sans text-[10px] font-bold opacity-30 w-20 shrink-0 uppercase tracking-tighter">{{ post.date | date_to_string }}</time>
-                    <span class="font-sans text-[10px] font-bold text-primary uppercase w-24 shrink-0 hidden md:block hidden">{{ post.title }}</span>
                     <a href="{{ post.url }}" class="font-serif text-xl md:text-2xl group-hover:text-primary transition-colors leading-tight">
                         {{ post.title }}
                     </a>
