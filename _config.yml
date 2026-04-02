@@ -2,7 +2,7 @@ title               : "Ahlus-Sunnah"
 desc                : "Collections of the sayings of Scholars regarding sectarianism and division within the Muslim community"
 baseurl             : "/"
 keywords            : "sect, shia, rafidah, sufi, sufism, khawarij, kharijites, islam, sunnah, salafi, salafism, sunni, ahlus-sunnah, bidah, bid'ah"
-url                 : "https://sunnimanhaj.github.io"
+url                 : "https://ahlus-sunnah.github.io"
 github_username     : sunnimanhaj
 permalink           : pretty
 markdown            : kramdown
