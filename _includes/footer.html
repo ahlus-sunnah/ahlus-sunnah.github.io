@@ -10,7 +10,8 @@
   <nav class="flex flex-wrap justify-center gap-4 mb-4">
   {% for author in site.data.authors %}
   {% if author.enabled %}
-    <a href="{{ author.url }}">{{ author.name }}</a>
+    <a class="hover:text-primary transition-colors pb-1 border-b-2 border-transparent hover:border-primary" 
+       href="{{ author.url }}">{{ author.name }}</a>
   {% endif %}
   {% endfor %}
 </nav>
