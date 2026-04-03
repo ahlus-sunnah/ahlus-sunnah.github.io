@@ -1,39 +1,29 @@
 ---
 layout: default
 ---
+          {% for post in paginator.posts %}
+            <article class="group">
+                <header class="flex items-center gap-4 mb-4">
+                    <span class="text-sm font-mono opacity-50">{{ post.date | date: "%b %d, %Y" }}</span>
+                    {% for category in post.categories %}
+                      <a href="{{ site.baseurl }}/category/{{ category | slugify }}" class="px-3 py-1 border border-current text-xs font-bold uppercase tracking-widest">Creed</a>
+                    {% endfor %}
+                </header>
+                <a href="#" class="block">
+                    <h2 class="text-3xl md:text-3xl font-black leading-tight tracking-tighter uppercase break-words group-hover:italic transition-all duration-300">
+                       {{ post.title }}
+                    </h2>
+                </a>
+                <p class="mt-8 text-xl md:text-2xl leading-relaxed max-w-3xl opacity-90">
+                    {{ post.content | strip_html | truncatewords: 120 }}
+                </p>
+                <div class="mt-10">
+                    <a href="{{ post.url }}" class="text-xl font-black border-b-4 border-current hover:bg-base-content hover:text-base-100 px-2 py-1 transition-all inline-block">
+                        CONTINUE READING
+                    </a>
+                </div>
+            </article>
+          {% endfor %}
 
-<div class="lg:py-0 sm:py-32">
-  <div class="mx-auto max-w-7xl px-1 lg:px-1">
-    
-    <div class="mx-auto mt-1 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-0 xl:mt-0 lg:mt-0 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      {% for post in paginator.posts %}
-      <article class="flex max-w-xl flex-col items-start justify-between">
-        <div class="flex items-center gap-x-4 text-xs">
-          <time datetime="{{ post.date }}" class="text-gray-500">{{ post.date | date: "%b %d, %Y" }}</time>
-            {% for category in post.categories %}
-              <a class=""relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100" 
-                href="{{ site.baseurl }}/category/{{ category | slugify }}"><span class="badge badge-soft badge-outline badge-sm capitalize">{{ category }}</span></a>{% unless forloop.last %} {% endunless %}
-            {% endfor %}
-        </div>
-        <div class="group relative grow">
-          <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-          <div class="text-sm/6">
-            <p class="font-semibold text-gray-900">
-                <span class="absolute inset-0"></span>
-                {{ post.author }}
-            </p>
-          </div>
-            <a href="{{ post.url }}">
-              <span class="absolute inset-0"></span>
-              {{ post.title }}
-            </a>
-          </h3>
-          <p class="mt-3 line-clamp-3 text-sm/6 text-gray-600">{{ post.content | strip_html | truncatewords: 120 }}</p>
-        </div>
-      </article>
-      {% endfor %}
-      
-    </div>
-  </div>
+
    {% include pagination.html %} 
-</div>
