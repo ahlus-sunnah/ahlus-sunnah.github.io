@@ -1,0 +1,10 @@
+# authors
+- name: "Ibn Taymiyyah"
+  url: "/author/ibn-taymiyyah"
+  enabled: true
+- name: "Hamad Al-Ansari"
+  url: "/author/hamad-ansari"
+  enabled: true
+- name: "LocalHost"
+  url: "http://localhost:8080"
+  enabled: false

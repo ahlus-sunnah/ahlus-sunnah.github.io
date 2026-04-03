@@ -7,6 +7,13 @@
       </a>
     {% endfor %}
   </nav>
+  <nav class="flex flex-wrap justify-center gap-4 mb-4"></nav>
+  {% for author in site.data.authors %}
+  {% if author.enabled %}
+    <a href="{{ author.url }}">{{ author.name }}</a>
+  {% endif %}
+  {% endfor %}
+</nav>
   <aside>
     <p>Copyright © {{ "now" | date: "%Y" }} - All rights reserved by {{ site.title }}</p>
   </aside>
