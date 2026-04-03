@@ -12,5 +12,15 @@
 {% include aside.html %} 
 </main><!-- /main -->
  {% include footer.html %} 
+     <script>
+        const toggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        if (html.getAttribute('data-theme') === 'black') { toggle.checked = true; }
+        toggle.addEventListener('change', () => {
+            const newTheme = toggle.checked ? 'black' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
 </body>
 </html>
