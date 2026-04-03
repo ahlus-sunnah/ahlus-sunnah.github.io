@@ -1,7 +1,20 @@
-<div class="grid place-items-center w-full py-4 mt-8 mb-6">
+<div class="grid place-items-center w-full py-4 mt-8 mb-6 hidden">
   <div class="join">
     {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="join-item btn btn-outline">Previous</a>{% else %}<button class="join-item btn btn-outline btn-disabled">Previous</button>{% endif %}
     <button class="join-item btn btn-outline">Page: {{ paginator.page }} of {{ paginator.total_pages }}</button>
     {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="join-item btn btn-outline">Next</a>{% else %}<button class="join-item btn btn-outline btn-disabled">Next</button>{% endif %}
   </div>
 </div>
+        <div class="mt-10 pt-12 border-t border-base-300 flex justify-between items-center font-sans">
+          {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path }}" class="text-xs uppercase font-bold opacity-30 hover:opacity-100 transition-opacity">← Older Posts</a>
+            {% else %}
+              <a class="text-xs uppercase font-bold opacity-30 hover:opacity-100 transition-opacity">← Older Posts</a>
+          {% endif %}
+          {% if paginator.next_page %}
+            <span class="text-[10px] opacity-40 font-bold tracking-widest">Page 01 of 12</span>
+            <a href="{{ paginator.next_page_path }}" class="text-xs uppercase font-bold hover:text-primary transition-colors">Newer Posts →</a>
+            {% else %}
+            <a class="text-xs uppercase font-bold opacity-30 hover:opacity-100 transition-opacity">Newer Posts →</a>
+          {% endif %}
+        </div>
