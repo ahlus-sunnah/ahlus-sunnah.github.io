@@ -8,6 +8,7 @@ permalink: /search/
             <h1 class="text-xs font-black uppercase tracking-[0.4em] mb-8 opacity-40">Search</h1>
             <div class="relative">
                 <input type="text" 
+                      id="search-input"
                        placeholder="Enter Keywords..." 
                        class="search-input w-full bg-transparent border-b-8 md:border-b-[16px] border-current py-6 md:py-12 text-4xl md:text-8xl font-black uppercase tracking-tighter placeholder:opacity-10 transition-all duration-300" 
                        autofocus />
@@ -21,6 +22,6 @@ permalink: /search/
             <div class="opacity-30 italic text-xl">
                 No active search. Start typing to filter records...
             </div>
-            
+            <ul id="results-container"></ul>
             </section>
 
