@@ -11,8 +11,8 @@
             {% else %}
               <a class="text-xs uppercase font-bold opacity-30 hover:opacity-100 transition-opacity">← Older Posts</a>
           {% endif %}
+            <span class="text-[10px] opacity-40 font-bold tracking-widest">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
           {% if paginator.next_page %}
-            <span class="text-[10px] opacity-40 font-bold tracking-widest">Page 01 of 12</span>
             <a href="{{ paginator.next_page_path }}" class="text-xs uppercase font-bold hover:text-primary transition-colors">Newer Posts →</a>
             {% else %}
             <a class="text-xs uppercase font-bold opacity-30 hover:opacity-100 transition-opacity">Newer Posts →</a>
