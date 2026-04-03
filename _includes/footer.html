@@ -2,29 +2,8 @@
         <p class="text-sm font-mono uppercase font-bold tracking-widest">© {{ "now" | date: "%Y" }} {{ site.title }}</p>
         <div class="flex gap-8 font-black uppercase text-sm">
             <a href="{{ site.url }}" class="hover:italic hover:underline decoration-2 underline-offset-4">Index</a>
+            <a href="/submit" class="hover:italic hover:underline decoration-2 underline-offset-4">Submit Post</a>
             <a href="/404" class="hover:italic hover:underline decoration-2 underline-offset-4">404</a>
             <a href="/contact" class="hover:italic hover:underline decoration-2 underline-offset-4">Contact</a>
         </div>
     </footer>
-
-<footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10 hidden">
-  <nav class="flex flex-wrap justify-center gap-4 mb-4">
-    {% for category in site.categories %}
-      {% capture category_name %}{{ category | first }}{% endcapture %}
-      <a href="/category/{{ category_name | slugify }}" class="link link-hover capitalize badge badge-soft badge-accent">
-        {{ category_name }}
-      </a>
-    {% endfor %}
-  </nav>
-  <nav class="flex flex-wrap justify-center gap-4 mb-4">
-  {% for author in site.data.authors %}
-  {% if author.enabled %}
-    <a class="hover:text-primary transition-colors pb-1 border-b-2 border-transparent hover:border-primary" 
-       href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-  {% endfor %}
-</nav>
-  <aside>
-    <p>Copyright © {{ "now" | date: "%Y" }} - All rights reserved by {{ site.title }}</p>
-  </aside>
-</footer>
