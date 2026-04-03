@@ -20,3 +20,5 @@ The Sunnah of the Messenger (peace and blessings be upon him) is a clarification
 As for those who reject the Sunnah—if they do so intentionally—this constitutes a denial of the Messenger (peace and blessings of Allah be upon him), and this would be [an act of] disbelief. As for those who are ignorant or blindly following others, this matter should be clarified and explained to them. 
 
 القرآنيون الذين ينكرون السنة ينكرون العمل بالأحاديث ويقولون ما نعمل إلا بالقرآن ، هؤلاء كذبوا فإنهم لم يعملوا بالقرآن لأن الله قال في القرآن: (( وما أتاكم الرسول فخذوه وما نهاكم عنه فانتهوا واتقوا الله إن الله شديد العقاب )) ، وقال جل وعلا لنبيه: (( وأنزلنا إليك الذكر لتبين للناس ما نزل إليهم )) ، فإذا ألغيت السنة كيف يبين القرآن ما الذي يفسر القرآن ؟ سنة الرسول صلى الله عليه وسلم فهي بيان للقرآن ومفسرة للقرآن ، والذين ينكرون السنة هؤلاء إن كانوا متعمدين لذلك هذا تكذيب للرسول صلى الله عليه وسلم فيكون هذا كفر ، أما إذا كانوا جهالاً ومقلدين فيبين لهم ويشرح لهم هذا الأمر
+
+See also: [The Sunnah is the Second Revelation after the Quran](/sunnah-is-the-second-revelation/)
