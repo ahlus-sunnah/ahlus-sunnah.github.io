@@ -3,14 +3,24 @@ layout: no_sidebar
 title: Page Not Found
 permalink: /404.html
 ---
-<main class="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
-  <div class="text-center">
-    <p class="text-base font-semibold text-indigo-600">404</p>
-    <h1 class="mt-4 text-5xl font-semibold tracking-tight text-balance sm:text-7xl">Page not found</h1>
-    <p class="mt-6 text-lg font-medium text-pretty sm:text-xl/8">Sorry, we couldn’t find the page you’re looking for.</p>
-    <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="{{ site.url }}" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a>
-      <a href="#" class="text-sm font-semibold">Contact support <span aria-hidden="true">&rarr;</span></a>
-    </div>
-  </div>
-</main>
+
+        <div class="max-w-4xl">
+            <h1 class="glitch text-[10rem] md:text-[20rem] font-black leading-none tracking-tighter uppercase transition-all duration-100 select-none">
+                404
+            </h1>
+            <h2 class="text-3xl md:text-5xl mb-2 font-black uppercase tracking-tighter mt-[-2rem] md:mt-[-4rem]">
+                You have reached a void.
+            </h2>
+            <p class="mt-8 text-xl md:text-2xl font-medium opacity-70 max-w-lg mx-auto leading-relaxed italic">
+                "The path you seek is currently unavailable or has been moved to another existence."
+            </p>
+            
+            <div class="mt-12 flex flex-col md:flex-row gap-4 justify-center">
+                <a href="{{ site.url }}" class="px-8 py-4 border-4 border-current font-black uppercase text-lg hover:bg-base-content hover:text-base-100 transition-all">
+                    Return to Reality
+                </a>
+                <a href="#" onclick="history.back()" class="px-8 py-4 border-2 border-current font-black uppercase text-lg hover:italic transition-all">
+                    Go Back
+                </a>
+            </div>
+        </div>
