@@ -7,7 +7,7 @@
       </a>
     {% endfor %}
   </nav>
-  <nav class="flex flex-wrap justify-center gap-4 mb-4"></nav>
+  <nav class="flex flex-wrap justify-center gap-4 mb-4">
   {% for author in site.data.authors %}
   {% if author.enabled %}
     <a href="{{ author.url }}">{{ author.name }}</a>
