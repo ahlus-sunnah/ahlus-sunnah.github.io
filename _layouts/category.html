@@ -1,22 +1,6 @@
 ---
 layout: default
 ---
-    <nav aria-label="Breadcrumb">
-      <ol role="list" class="mx-auto mb-5 flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <li>
-          <div class="flex items-center">
-            <a href="{{ site.url }}" class="ml-0 mr-2 text-sm font-medium text-gray-900">Home</a>
-            <svg viewBox="0 0 16 20" width="16" height="20" fill="currentColor" aria-hidden="true" class="h-5 w-4 text-gray-300">
-              <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
-            </svg>
-          </div>
-        </li>
-        <li class="text-sm">
-          <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">{{ page.title }}</a>
-        </li>
-      </ol>
-    </nav>
-
     <section class="max-w-6xl mx-auto px-8 md:px-12 pt-16 md:pt-24 border-b-4 border-current pb-12">
         <span class="text-sm font-mono opacity-50 uppercase tracking-widest mb-4 block">Browsing Topic</span>
         <h1 class="text-6xl md:text-6xl font-black uppercase tracking-tighter leading-none">{{ page.title }}</h1>
@@ -25,12 +9,13 @@ layout: default
             <article class="group pb-12 border-b border-current border-opacity-20">
                 <time class="text-sm font-mono opacity-50 block mb-4">{{ post.date | date_to_string }}</time>
                 <a href="{{ post.url }}">
-                    <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight group-hover:italic transition-all">
+                    <h2 class="text-3xl md:text-3xl font-black uppercase tracking-tight group-hover:italic transition-all">
                         {{ post.title }}
                     </h2>
                 </a>
                 <p class="mt-6 text-xl opacity-80 line-clamp-2">
-                    
+                    {% assign stripped_content = post.content | strip_html %}
+                    {{ stripped_content | truncatewords: 30 }}
                 </p>
             </article>
 {% endfor %}
