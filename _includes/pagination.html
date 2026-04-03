@@ -5,7 +5,7 @@
     {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="join-item btn btn-outline">Next</a>{% else %}<button class="join-item btn btn-outline btn-disabled">Next</button>{% endif %}
   </div>
 </div>
-        <div class="mt-10 pt-12 border-t border-base-300 flex justify-between items-center font-sans">
+        <div class="mt-10 pt-12 border-t border-base-300 flex justify-between items-center font-sans hidden">
           {% if paginator.previous_page %}
               <a href="{{ paginator.previous_page_path }}" class="text-xs uppercase font-bold opacity-30 hover:opacity-100 transition-opacity">← Older Posts</a>
             {% else %}
@@ -18,3 +18,26 @@
             <a class="text-xs uppercase font-bold opacity-30 hover:opacity-100 transition-opacity">Newer Posts →</a>
           {% endif %}
         </div>
+            <nav class="pt-10 border-t-4 border-current flex items-center justify-between font-black uppercase">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="flex items-center gap-2 hover:italic group">
+                    <span class="group-hover:-translate-x-2 transition-transform">←</span> OLDER
+                </a>
+                {% else %}
+                <a class="flex items-center gap-2 hover:italic group">
+                    <span class="group-hover:-translate-x-2 transition-transform">←</span> OLDER
+                </a>
+                {% endif %}
+                <div class="hidden md:flex gap-4">
+                     <span class="opacity-40 font-bold tracking-widest">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+                </div>
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="flex items-center gap-2 hover:italic group">
+                    NEWER <span class="group-hover:translate-x-2 transition-transform">→</span>
+                </a>
+                {% else %}
+                <a class="flex items-center gap-2 hover:italic group">
+                    NEWER <span class="group-hover:translate-x-2 transition-transform">→</span>
+                </a>
+                {% endif %}
+            </nav>
