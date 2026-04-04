@@ -21,11 +21,11 @@
             <nav class="pt-10 border-t-4 border-current flex items-center justify-between font-black uppercase">
                 {% if paginator.previous_page %}
                 <a href="{{ paginator.previous_page_path }}" class="flex items-center gap-2 hover:italic group">
-                    <span class="group-hover:-translate-x-2 transition-transform">←</span> OLDER
+                    <span class="group-hover:-translate-x-2 transition-transform">←</span> Go Back!
                 </a>
                 {% else %}
                 <a class="flex items-center gap-2 opacity-40 group">
-                    <span class="group-hover:-translate-x-2 transition-transform">←</span> OLDER
+                    <span class="group-hover:-translate-x-2 transition-transform">←</span> Go Back!
                 </a>
                 {% endif %}
                 <div class="hidden md:flex gap-4">
@@ -33,11 +33,11 @@
                 </div>
                 {% if paginator.next_page %}
                 <a href="{{ paginator.next_page_path }}" class="flex items-center gap-2 hover:italic group">
-                    NEWER <span class="group-hover:translate-x-2 transition-transform">→</span>
+                    Keep Going! <span class="group-hover:translate-x-2 transition-transform">→</span>
                 </a>
                 {% else %}
                 <a class="flex items-center gap-2 opacity-40 group">
-                    NEWER <span class="group-hover:translate-x-2 transition-transform">→</span>
+                    Keep Going! <span class="group-hover:translate-x-2 transition-transform">→</span>
                 </a>
                 {% endif %}
             </nav>
