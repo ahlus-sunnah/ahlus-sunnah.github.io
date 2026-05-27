@@ -4,8 +4,8 @@ date: "2026-04-14"
 title: "The Deviant Creed of the Sect Called 'Nation of Islam'"
 author: "Sh. Salih al-Luhaydan"
 category: [noi, farrakhanism]
-source: "https://www.instagram.com/tv/B0f0YLGA3Rw/"
 ---
+
 ### Question: 
 
 O Virtuous Sheikh, we have a group here in America called the '**Nation of Islam**' that claims to be Islamic. Their beliefs include : 
@@ -20,6 +20,7 @@ Your Eminence, the question is:
 4. Fourthly: What is your advice to those who hesitate in declaring them as disbelievers?
 
 ### Answer:
+
 In the name of Allah, the Most Gracious, the Most Merciful. All praise is due to Allah, and peace and blessings be upon the Messenger of Allah, whom Allah (Glorified and Exalted be He) sent as a mercy to the worlds, and whom He made the Seal of the Prophets and Messengers—so there is no prophet after him, nor any messenger; upon him be the best prayers and most perfect submission.
 
 Regarding those described in these three questions: these people are not Muslims. Have they even accepted Islam before this so that they could then apostatize, allowing one to judge them as apostates? It does not appear that they ever entered Islam. Rather, this is a form of Hululiyah (incarnationism), except that they have claimed [God] dwells within the Black race and that the White race are devils. This is an act of malice they intend toward white people.
@@ -28,4 +29,4 @@ The reality is that a Muslim is the brother of a Muslim. The condition for [one 
 
 ---
 
-[Listen here](https://www.instagram.com/tv/B0f0YLGA3Rw/) or [here](https://sunnahpublishing.net/ash-shaykh-al-allaamah-muhammad-ibn-saalih-al-luhaydaan-hafidhahullaah-on-the-disbelief-of-the-nation-of-islam/)
+[Source](https://sunnahpublishing.net/ash-shaykh-al-allaamah-muhammad-ibn-saalih-al-luhaydaan-hafidhahullaah-on-the-disbelief-of-the-nation-of-islam/)
